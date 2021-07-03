@@ -14,7 +14,7 @@ Create an application that randomly generates a strong password that meets certa
 
 * When the user answers each prompt, their input should be validated and at least one character type should be selected. 
 
-* When all prompts are answered a passweord is generated that matches the selected criteria.
+* When all prompts are answered a password is generated that matches the selected criteria.
 
 * The newly generated password is displayed in an alert or written to the page. 
 

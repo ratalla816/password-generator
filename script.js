@@ -24,6 +24,16 @@ var pwdLength = (prompt("Please specify password length. Number of characters mu
 
 var characterTypes = [];
 
+/* Assuming that window.crypto.getRandomValues is available */
+
+// var array = new Uint32Array(10);
+// window.crypto.getRandomValues(array);
+
+// console.log("Get password:");
+// for (var i = 0; i < array.length; i++) {
+//  console.log(array[i]);
+// }
+
  // Confirm character choices - verify in console log
 var lowerCase = confirm("Please click OK to include lowercase letters, otherwise click CANCEL");
   if (lowerCase === true) {
@@ -62,7 +72,8 @@ var characterType =
   // Attaches random character type with number then assigns ascii codes to each value
   if (characterType === 0) {
     console.log("Random lowercase");
-var characterCode = Math.floor(Math.random() * 25) + 81;
+                                           // These numbers are incorrect //
+var characterCode = Math.floor(Math.random() * 25) + 81; 
     console.log(characterCode);
 var asciiCode = String.fromCharCode(characterCode);
     console.log(asciiCode);
@@ -71,6 +82,7 @@ var asciiCode = String.fromCharCode(characterCode);
   
    else if (characterType === 1) {
     console.log("Random uppercase");
+                                            // These numbers are incorrect //
 var characterCode = Math.floor(Math.random() * 30) + 75;
     console.log(characterCode);
 var asciiCode = String.fromCharCode(characterCode);
@@ -80,6 +92,7 @@ var asciiCode = String.fromCharCode(characterCode);
   
    else if (characterType === 2) {
     console.log("Random number");
+                                              // These numbers are incorrect //
 var characterCode = Math.floor(Math.random() * 9) + 56;
     console.log(characterCode);
 var asciiCode = String.fromCharCode(characterCode);
@@ -89,6 +102,7 @@ var asciiCode = String.fromCharCode(characterCode);
   
    else if (characterType === 3) {
     console.log("Random special character");
+                                              // These numbers are incorrect //
 var characterCode = Math.floor(Math.random() * 14) + 35;
 var asciiCode = String.fromCharCode(characterCode);
     getPassword = getPassword.concat(asciiCode);
@@ -98,6 +112,7 @@ var asciiCode = String.fromCharCode(characterCode);
     // If no characters are selected user is prompted to select at least one type.
     // If all prompts have been dispositioned and at least one character is chosen then password will be displayed on the page. 
     else {
+      // This doesn't work..
       alert("Please select at least one character type.");
     }
     console.log("Your password is " + getPassword);

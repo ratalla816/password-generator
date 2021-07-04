@@ -3,7 +3,8 @@
 // When the "Generate Password" button is clicked the user is presented with a series of prompts requesting password criteria.
 
 // Get references to the #generate element - Needs query selector
-document.querySelector("#generate").addEventListenter("click", writePassword);
+var generateBtn = document.querySelector("#generate");
+
 
 // Write password to the #password input
 function writePassword() {

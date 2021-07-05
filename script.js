@@ -24,6 +24,7 @@ var pwdLength = (prompt("Please specify password length. Number of characters mu
 
 var characterTypes = [];
 
+// **EXPERIMENTAL**
 /* Assuming that window.crypto.getRandomValues is available */
 
 // var array = new Uint32Array(10);
@@ -111,14 +112,15 @@ var asciiCode = String.fromCharCode(characterCode);
 // When the user answers each prompt, their input should be validated and at least one character type should be selected.
     // If no characters are selected user is prompted to select at least one type.
     // If all prompts have been dispositioned and at least one character is chosen then password will be displayed on the page. 
-    else {
-      // This doesn't work..
+     else {
+       // This doesn't work..
       alert("Please select at least one character type.");
+      // **EXPERIMENTAL** else (characterType <= 0 || characterType >= 5)
     }
     console.log("Your password is " + getPassword);
     }
    return getPassword;
-}
+  }
 
 // Write password to the #password input
 function writePassword() {

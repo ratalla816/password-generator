@@ -73,7 +73,7 @@ var characterType =
   if (characterType === 0) {
     console.log("Random lowercase");
                                            // These numbers are incorrect //
-var characterCode = Math.floor(Math.random() * 25) + 81; 
+var characterCode = Math.floor(Math.random() * 26) + 104; 
     console.log(characterCode);
 var asciiCode = String.fromCharCode(characterCode);
     console.log(asciiCode);
@@ -83,7 +83,7 @@ var asciiCode = String.fromCharCode(characterCode);
    else if (characterType === 1) {
     console.log("Random uppercase");
                                             // These numbers are incorrect //
-var characterCode = Math.floor(Math.random() * 30) + 75;
+var characterCode = Math.floor(Math.random() * 26) + 104;
     console.log(characterCode);
 var asciiCode = String.fromCharCode(characterCode);
     console.log(asciiCode);
@@ -93,7 +93,7 @@ var asciiCode = String.fromCharCode(characterCode);
    else if (characterType === 2) {
     console.log("Random number");
                                               // These numbers are incorrect //
-var characterCode = Math.floor(Math.random() * 9) + 56;
+var characterCode = Math.floor(Math.random() * 10) + 40;
     console.log(characterCode);
 var asciiCode = String.fromCharCode(characterCode);
     console.log(asciiCode);
@@ -103,7 +103,7 @@ var asciiCode = String.fromCharCode(characterCode);
    else if (characterType === 3) {
     console.log("Random special character");
                                               // These numbers are incorrect //
-var characterCode = Math.floor(Math.random() * 14) + 35;
+var characterCode = Math.floor(Math.random() * 20) + 100;
 var asciiCode = String.fromCharCode(characterCode);
     getPassword = getPassword.concat(asciiCode);
    } 

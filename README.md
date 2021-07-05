@@ -24,6 +24,7 @@ https://ratalla816.github.io/password-generator/
 
 ## Deployed Application Screenshot
 
+![application screenshot](./assets/screenshot.JPG)
 
 #### Acknoledgements
 

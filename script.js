@@ -4,7 +4,7 @@
 var generateBtn = document.querySelector("#generate");
 
 
-// Initialize prompt sequence - strap in!
+// Initialize prompt sequence!
 function generatePassword() {
 
   // When prompted to choose the length of the criteria, the user is able to select between 8 and 128 characters.    
@@ -98,17 +98,7 @@ function generatePassword() {
       var asciiCode = String.fromCharCode(characterCode);
       getPassword = getPassword.concat(asciiCode);
     }
-                  //                     **EXPERIMENTAL**                       \\
-                 // * Assuming that window.crypto.getRandomValues is available*/ \\
-
-               // var array = new Uint32Array(10);                                 \\
-              // window.crypto.getRandomValues(array);                              \\
-
-            // console.log("Get password:");                                          \\
-           // for (var i = 0; i < array.length; i++) {                                 \\
-          //  console.log(array[i]);                                                    \\
-         // }                                                                            \\
-   
+     
          // When the user answers each prompt, their input should be validated and at least one character type should be selected.
     // If no characters are selected user is prompted to select at least one type.
     else {

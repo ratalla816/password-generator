@@ -60,7 +60,7 @@ function generatePassword() {
       characterTypes[Math.floor(Math.random() * characterTypes.length)];
     console.log(characterType);
 
-    // Attaches random character type with number then assigns ascii codes to each value
+    // Attaches random character type with number then assigns ascii codes (the text visible to the user) to each value
     if (characterType === 0) {
       console.log("Random lowercase");
       // #97 is the decimal representation of lowercase a in the ascii table, and each following letter is one digit higher. Lowercase z is #122 minus #97 = 25 (determines proper character type)//

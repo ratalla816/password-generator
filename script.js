@@ -63,7 +63,8 @@ function generatePassword() {
     // Attaches random character type with number then assigns ascii codes to each value
     if (characterType === 0) {
       console.log("Random lowercase");
-      // #97 is the decimal representation of lowercase a in the ascii table, and each following letter is one digit higher. Lowercase z is #122 minus #97 = 25 (determines proper character type)//
+     // #97 is the Decimal representation of lowercase a in the ascii table, and each consecutive letter is one digit higher. 
+     //Lowercase z is #122 minus #97 = 25. "25 is the remaining number of letters in the english alphabet" (var function determines proper character type)//
       var characterCode = Math.floor(Math.random() * 25) + 97;
       console.log(characterCode);
       var asciiCode = String.fromCharCode(characterCode);
@@ -73,7 +74,8 @@ function generatePassword() {
 
     else if (characterType === 1) {
       console.log("Random uppercase");
-      // #65 is the decimal representation of uppercase A in the ascii table, and each following letter is one digit higher. Uppercase Z is #90 minus #65 = 25 (determines proper character type)//
+      // #65 is the Decimal representation of uppercase A in the ascii table, and each consecutive letter is one digit higher. 
+      //Uppercase Z is #90 minus #65 = 25 "25 is the remaining number of letters in the english alphabet" (var function determines proper character type)//
       var characterCode = Math.floor(Math.random() * 25) + 65;
       console.log(characterCode);
       var asciiCode = String.fromCharCode(characterCode);
@@ -83,7 +85,8 @@ function generatePassword() {
 
     else if (characterType === 2) {
       console.log("Random number");
-      // #48 is the decimal representation of ZERO in the ascii table, and each following number is one digit higher. Nine is #57 minus #48 = 9 (determines proper character type)//
+     // #48 is the Decimal representation of ZERO in the ascii table, and each consecutive number is one digit higher. 
+     //Nine is #57 minus #48 = 9 "9 is the quantity of remaining numerical characters" (var function determines proper character type)//
       var characterCode = Math.floor(Math.random() * 9) + 48;
       console.log(characterCode);
       var asciiCode = String.fromCharCode(characterCode);
@@ -93,22 +96,13 @@ function generatePassword() {
 
     else if (characterType === 3) {
       console.log("Random special character");
-      // #33 is the decimal representation of ! in the ascii table, and each following character is one digit higher. (this applcation uses !, ", #, $, %, &) & is #38 minus #33 = 5 (determines proper character type)//
+     // #33 is the Decimal representation of ! in the ascii table, and each consecutive character is one digit higher. 
+     //(this applcation uses !, ", #, $, %, &) & is #38 minus #33 = 5 "5 is the number of remaining special characters" (var function determines proper character type)//
       var characterCode = Math.floor(Math.random() * 5) + 33;
       var asciiCode = String.fromCharCode(characterCode);
       getPassword = getPassword.concat(asciiCode);
     }
-                  //                     **EXPERIMENTAL**                       \\
-                 // * Assuming that window.crypto.getRandomValues is available*/ \\
-
-               // var array = new Uint32Array(10);                                 \\
-              // window.crypto.getRandomValues(array);                              \\
-
-            // console.log("Get password:");                                          \\
-           // for (var i = 0; i < array.length; i++) {                                 \\
-          //  console.log(array[i]);                                                    \\
-         // }                                                                            \\
-   
+     
          // When the user answers each prompt, their input should be validated and at least one character type should be selected.
     // If no characters are selected user is prompted to select at least one type.
     else {

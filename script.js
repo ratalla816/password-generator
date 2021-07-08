@@ -10,9 +10,9 @@ function generatePassword() {
   // When prompted to choose the length of the criteria, the user is able to select between 8 and 128 characters.    
 
   // Select password length prompt
-  var pwdLength = (prompt("Please specify password length. Number of characters must be between 8 and 128."));
+  var pwdLength = (prompt("Please specify password length as a numeric value. Number of characters must be between 8 and 128."));
 
-  while (pwdLength <= 7 || pwdLength >= 129) {
+  while (isNaN(pwdLength) || pwdLength < 8 || pwdLength > 128) {
     alert("Length must be between 8 and 128 characters. Please try again");
     var pwdLength = (prompt("Please specify password length. Number of characters must be between 8 and 128."));
   }
